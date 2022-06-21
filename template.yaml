@@ -43,6 +43,8 @@ spec:
         url: ./template
         values:
           name: ${{ parameters.name }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
+          owner: ${{ parameters.owner }}
 
     - id: fetch-docs
       name: Fetch Docs
