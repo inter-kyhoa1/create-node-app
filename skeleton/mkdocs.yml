@@ -1,0 +1,8 @@
+site_name: "a site"
+site_description: "a documentation repo"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
