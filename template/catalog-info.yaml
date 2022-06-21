@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "hard-coded-nodejs-app"
-  description: "not care"
+  name: ${{ parameters.name }}
+  description: ${{ parameters.description }}
   annotations:
-    github.com/project-slug: inter-kyhoa1/hello-world
+    github.com/project-slug: ${{ parameters.owner }}/hello-world
     backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: experimental
-  owner: "inter-kyhoa1"
+  owner: ${{ parameters.owner }}
