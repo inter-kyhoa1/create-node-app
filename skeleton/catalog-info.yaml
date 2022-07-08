@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
     backstage.io/techdocs-ref: dir:.
+    interswd.io/user-counter: "0123456789"
 spec:
   type: service
   lifecycle: experimental
